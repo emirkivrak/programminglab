@@ -1,3 +1,4 @@
+import random ## sonda kullanılacak
 table=[] ## table                 ## global tanımlandı
 tablesize=13 ## tablesize
 def makeatable(tablesize):
@@ -17,9 +18,15 @@ def insert_my_number(number):
         table[index]=1 ## değilse o index 1 yapıldı
     return Collision  ## cakısma olup olmadıgı geri döndürüldü
 
-
-
-
+def test():
+    makeatable(table) ## tekrardan diziyi temizledim
+    sayac = 0 ## sayac olusturduk kac kere collision oldugunu sayıcak
+    for i in range(10):
+        randomnum = random.randint(0,10000)
+        if(insert_my_number == True): ## baktık collision varsa 
+            sayac += 1  ## sayacı bir arttırdık.
+    return sayac
+print(test())  
 
 
 
