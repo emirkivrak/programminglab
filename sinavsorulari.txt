@@ -1,0 +1,47 @@
+
+----------------------------------------------------------------------------* >>> 1
+** Bir string ve bir text alıcak string textte varsa true yoksa false
+* bir string ve bir text alıcak string textte varsa var ve şurada diyecek
+* ikinci gönderilen parametre 1. parametreden n defa bulunuyorsa bulunduğu yerlerin başlangıç adresini liste halinde geri gönderen fonksiyonu yazınız.
+
+-----------------------------------------------------------------------------* >>> 2 
+
+**tersten okunuşu ile aynı olan kelimeleri test eden bir fonksiyon yazınız.
+
+-----------------------------------------------------------------------------* >>> 3
+
+** n * n tane karekteri matrise atayan bir fonksiyon yazınız
+* kendisine aktarılan bir kelimeyi bu matris üzerinde soldan sağa sağdan sola yukarından aşşağıya aşşağıdan yukarıya doğrultularında arayıp olup olmadığını return eden bir fonksiyon yazınız.
+
+------------------------------------------------------------------------------* >>> 4 
+
+** kendisine aktarılan bir listedeki sayıların ortalamasını standart sapmasını return eden bir fonksiyon yazınız.
+
+------------------------------------------------------------------------------* >>> 5
+
+**bir matris veriliyor matrisin determinantını bulunuz.
+*bir matris veriliyor matris tekil(singular)matrismidir. 
+*bir matris veriliyor matrisi eşelon forma çeviriyorsunuz.
+
+1 0 0
+0 1 0 --> Elementer matris yolu (şekil verilecek).
+0 0 1 
+
+-------------------------------------------------------------------------------* >>> 6
+
+***bir matriste satır ve sütünlarının toplamı en küçük/en büyük olan satır ve sütünlarını bulunuz.
+* bir matriste kaç tane sıfır olduğunu return eden fonksiyon
+* matristeki sıfır oranı yüzde 30 un altındaysa bu matrisi iki boyutlu listeden bir hash yapısına aktarınız. 
+* sıfırlar çok olduğu için hash yapısı ile oluşturulmuş matrisi iki boyutlu listeye aktarınız **
+-------------------------------------------------------------------------------* >>> 7
+
+*** şu formüle göre şu sayının kökünü buldurunuz denen fonksiyonu yazınız.
+
+
+
+
+******************************************************************************* 
+                       ***Return etmeyi unutma**
+                    *******Optüm, iyi günler******
+
+                       
