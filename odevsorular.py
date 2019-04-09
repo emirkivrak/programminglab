@@ -30,6 +30,38 @@ def pandigital(kelime): ## girilen string terside aynıysa True veirir örnek ka
     return False
 
 print(pandigital("araba"))
+def tek_boyut_dizi(n):
+    dizi = []
+    for i in range(n):
+        dizi.append([])
+        for j in range(3):
+            dizi[i].append(random.randint(0,100))
+    return dizi
+
+## kendisine aktarılan bir dizideki sayıların ortalaması ve standart sapmasını return eden foksiyonu yazın
+
+def ortalama(dizi): ## bu kod diziinin aritmetik ortalamasını bulmak için tasarlanmıştır .
+    ortalama = 0
+    for i in range(len(dizi)):
+        for j in range(len(dizi[i])):
+            ortalama += dizi[i][j]
+        return ortalama/len(dizi)
+
+def standart_sapma(dizi,aritmetik_ortalama): ## standart sapmayı bulmak için dizinin aritmetik toplamları ve dizi lazim
+    eleman_farklari = []
+    eleman_farklari_kareleri = []
+    eleman_farklari_toplamlari = 0
+    for i in range(len(dizi)): ## for döngüsü ile elemanların ortalamaya olan uzaklıklarından oluşan bir dizi elde et.
+        for j in range(len(dizi[i])):
+            eleman_farklari.append(abs(aritmetik_ortalama-dizi[i][j]))
+        eleman_farklari_kareleri = (fark*fark for fark in eleman_farklari) ## dizideki elemanların karelerini al
+        eleman_farklari_toplamlari = sum(eleman for eleman in eleman_farklari_kareleri) # dizideki elemanların karelerin toplamlarını al
+    return pow((eleman_farklari_toplamlari/len(dizi)-1),1/2) ## son olarak elemankareleri toplamlarını dizinin bir azına böl ve karekökünü al
+
+dizi = tek_boyut_dizi(10)
+
+standart_sapma(dizi,ortalama(dizi))
+
 
 def tek_boyut_olustur(eleman_sayisi): ## girilen eleman sayisi kadar random tek boyutlu dizi oluşturur
     dizi = []
