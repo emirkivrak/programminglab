@@ -141,7 +141,7 @@ def matris_to_hash(matris): ## matrisi aldı
             for j in range(len(matris[0])):
                 dict[sayac_2] = matris[i][j] #hash yapısının sayac_2.cı elemanı matrisin[i][j]. elemanına atıldı
     return dict
-
+ ##
 
 
 
