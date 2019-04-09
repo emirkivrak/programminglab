@@ -16,11 +16,18 @@ def trueorfalse(text,kelime): ## fonskiyon içine text ve kelime aldı
 
 def trueorfalseall(text,my_string): ## fonksiyon text içinde aratılanı bulur kelime olmasına gerek yok hece olsa da bulur.
     uzunluk = len(text)
+    sayac = 0
+    bulundu = 0
     for i in range (uzunluk):
         for j in range(uzunluk,-1,-1):
            if(text[i:j]==my_string):
-            return True
-    return False
+            sayac+=1
+            bulundu = 1
+            continue
+    if(bulundu == 1):
+        return("Bulundu şu kadar var = " + str(sayac))
+    return 0
+
 print(trueorfalseall(my_word_list,"Emi"))
 print(trueorfalse(my_word_list,"Emir"))
 
